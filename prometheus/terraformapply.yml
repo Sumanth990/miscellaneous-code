@@ -22,7 +22,9 @@ pipelines:
 #terraform init
                     command: terraform
                     arguments: ["init"]
+                    working_directory: prometheus
                 - exec:
 #terraform apply -auto-approve
                     command: terraform
                     arguments: [ "apply", "-auto-approve" ]
+                    working_directory: prometheus
