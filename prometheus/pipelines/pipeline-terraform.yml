@@ -1,6 +1,6 @@
 format_version: 10
 pipelines:
-  prometheus:
+  prometheus-terraform:
     group: tools
     display_order: -1
     materials:

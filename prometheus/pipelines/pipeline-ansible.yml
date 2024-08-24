@@ -1,6 +1,6 @@
 format_version: 10
 pipelines:
-  prometheus:
+  prometheus-ansible:
     group: tools
     display_order: -1
     materials:
