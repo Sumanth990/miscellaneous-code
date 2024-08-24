@@ -1,0 +1,4 @@
+#test
+- name: Say Hello
+  ansible.builtin.debug:
+    msg: "Hello"

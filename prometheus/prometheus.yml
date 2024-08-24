@@ -1,0 +1,5 @@
+- name: Prometheus server setup
+  hosts: all
+  become: true
+  roles:
+    - prometheus
