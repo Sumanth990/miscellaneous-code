@@ -2,6 +2,7 @@
 Description=prometheus
 
 [Service]
+workingDirectory=/opt/prometheus-{{prometheus_version}}.linux-amd64
 ExecStart=/opt/prometheus-{{prometheus_version}}.linux-amd64
 
 [Install]
