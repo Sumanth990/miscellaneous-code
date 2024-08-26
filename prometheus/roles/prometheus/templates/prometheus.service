@@ -1,5 +1,15 @@
-[Unit]
-Description=prometheus
+#[Unit]
+#Description=prometheus
+#
+#[Service]
+#workingDirectory=/opt/prometheus-{{ prometheus_version }}.linux-amd64
+#ExecStart=/opt/prometheus-{{ prometheus_version }}.linux-amd64/prometheus
+#
+#[Install]
+#WantedBy=multi-user.target
+#
+#[Unit]
+#Description=prometheus
 
 [Service]
 workingDirectory=/opt/prometheus-{{ prometheus_version }}.linux-amd64
