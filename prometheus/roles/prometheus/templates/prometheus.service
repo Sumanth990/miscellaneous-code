@@ -8,8 +8,8 @@
 #[Install]
 #WantedBy=multi-user.target
 #
-#[Unit]
-#Description=prometheus
+[Unit]
+Description=prometheus
 
 [Service]
 workingDirectory=/opt/prometheus-{{ prometheus_version }}.linux-amd64
