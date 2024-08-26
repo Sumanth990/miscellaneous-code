@@ -20,6 +20,6 @@ pipelines:
               tasks:
                 - exec:
                     #terraform init
+                    working_directory: prometheus
                     command: bash
                     arguments: [ "ansible.sh" ]
-                    working_directory: prometheus
