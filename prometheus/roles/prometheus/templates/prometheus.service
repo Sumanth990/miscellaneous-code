@@ -1,0 +1,8 @@
+[Unit]
+Description=prometheus
+
+[Service]
+ExecStart=/opt/prometheus-{{prometheus_version}}.linux-amd64
+
+[Install]
+WantedBy=multi-user.target
