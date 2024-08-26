@@ -1,17 +1,22 @@
-- name: Download and extract prometheus
-  ansible.builtin.unarchive:
-    src: https://github.com/prometheus/prometheus/releases/download/v{{ prometheus_version }}/prometheus-{{ prometheus_version }}.linux-amd64.tar.gz
-    dest: /opt
-    remote_src: yes
+#testing if all is working as expected.
+- name: Say hello
+  ansible.builtin.debug:
+    msg: "Hello test...."
 
-- name: Copy prometheus service file
-  ansible.builtin.template:
-    src: prometheus.service
-    dest: /etc/systemd/system/prometheus.service
-
-- name: Start prometheus service
-  ansible.builtin.systemd_service:
-    name: prometheus
-    state: restarted
-    daemon_reload: true
-    enabled: true
+#- name: Download and extract prometheus
+#  ansible.builtin.unarchive:
+#    src: https://github.com/prometheus/prometheus/releases/download/v{{ prometheus_version }}/prometheus-{{ prometheus_version }}.linux-amd64.tar.gz
+#    dest: /opt
+#    remote_src: yes
+#
+#- name: Copy prometheus service file
+#  ansible.builtin.template:
+#    src: prometheus.service
+#    dest: /etc/systemd/system/prometheus.service
+#
+#- name: Start prometheus service
+#  ansible.builtin.systemd_service:
+#    name: prometheus
+#    state: restarted
+#    daemon_reload: true
+#    enabled: true
